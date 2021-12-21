@@ -18,13 +18,13 @@ signal tick(result)
 signal abort_tree()
 
 # Turn this off to make the node fail at each tick.
-export(bool) var is_active: bool = true 
+@export var is_active: bool = true 
 
 # Turn this on to print the name of the node at each tick.
-export(bool) var debug: bool = false 
+@export var debug: bool = false 
 
 # Turn this on to abort the tree after completion.
-export(bool) var abort_tree: bool
+@export var abort_tree: bool
 
 var state: int setget set_state
 
